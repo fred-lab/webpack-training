@@ -1,18 +1,19 @@
 
+// eslint-disable-next-line no-console
+const display = msg => console.log(msg);
 
-const display = (msg) => console.log(msg)
-
-display("App is ready for es6")
+display('App is ready for es6');
 
 const a = {
-    test : "a"
-}
+  test: 'a',
+};
 
 const b = {
-    ...a,
-    name: 'toto'
-}
+  ...a,
+  name: 'toto',
+};
+// eslint-disable-next-line no-console
+console.log(b);
 
-console.log(b)
-
-console.log('toto')
+// eslint-disable-next-line no-console
+console.log('toto');
