@@ -1,5 +1,6 @@
 const path = require("path")
 const outputPath = path.resolve(__dirname, "dist")
+const sourcePath = path.resolve(__dirname, "src/js")
 
 const config = {
     entry : {
@@ -15,6 +16,22 @@ const config = {
         alias: {
             Src : path.resolve(__dirname, "/src/js")
         }
+    },
+    module: {
+        rules: [
+            {
+                test: /\.jsx?$/,
+                include: [
+                    sourcePath
+                ],
+                exclude:[
+                    path.resolve("./node_modules"),
+                    outputPath
+                ],
+                enforce: "pre",
+                loader: "babel-loader"
+            }
+        ]
     }
 
 }
