@@ -1,3 +1,4 @@
+import add from './partials/math';
 
 // eslint-disable-next-line no-console
 const display = msg => console.log(msg);
@@ -16,4 +17,4 @@ const b = {
 console.log(b);
 
 // eslint-disable-next-line no-console
-console.log('toto');
+console.log(add(2, 2));

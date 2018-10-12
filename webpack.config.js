@@ -1,4 +1,5 @@
 const path = require('path');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const outputPath = path.resolve(__dirname, 'dist');
 const sourcePath = path.resolve(__dirname, 'src/js');
@@ -21,6 +22,7 @@ const config = {
   module: {
     rules: [
       {
+        /* Check the code with Eslint and after use Babel to compile js to es5 */
         test: /\.jsx?$/,
         include: [
           sourcePath,
@@ -37,6 +39,12 @@ const config = {
       },
     ],
   },
+  plugins: [
+    /* Clean useless files in the dist folder before recompilation */
+    new CleanWebpackPlugin(outputPath, {
+      verbose: true,
+    }),
+  ],
 };
 
 module.exports = config;
