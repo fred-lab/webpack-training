@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/main.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _partials_math__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./partials/math */ \"./src/js/partials/math.js\");\nfunction _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n // eslint-disable-next-line no-console\n\nvar display = function display(msg) {\n  return console.log(msg);\n};\n\ndisplay('App is ready for es6');\nvar a = {\n  test: 'a'\n};\n\nvar b = _objectSpread({}, a, {\n  name: 'toto'\n}); // eslint-disable-next-line no-console\n\n\nconsole.log(b); // eslint-disable-next-line no-console\n\nconsole.log(Object(_partials_math__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(2, 2));\n\n//# sourceURL=webpack:///./src/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _partials_math__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./partials/math */ \"./src/js/partials/math.js\");\nfunction _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n // import '../scss/main.scss';\n// eslint-disable-next-line no-console\n\nvar display = function display(msg) {\n  return console.log(msg);\n};\n\ndisplay('App is ready for es6');\nvar a = {\n  test: 'a'\n};\n\nvar b = _objectSpread({}, a, {\n  name: 'toto'\n}); // eslint-disable-next-line no-console\n\n\nconsole.log(b); // eslint-disable-next-line no-console\n\nconsole.log(Object(_partials_math__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(2, 2));\n\n//# sourceURL=webpack:///./src/js/main.js?");
 
 /***/ }),
 
@@ -107,6 +107,28 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _par
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (a, b) {\n  return a + b;\n});\n\n//# sourceURL=webpack:///./src/js/partials/math.js?");
+
+/***/ }),
+
+/***/ "./src/scss/main.scss":
+/*!****************************!*\
+  !*** ./src/scss/main.scss ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/scss/main.scss?");
+
+/***/ }),
+
+/***/ 0:
+/*!***************************************************!*\
+  !*** multi ./src/js/main.js ./src/scss/main.scss ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! /home/fred/labo/divers/webpacktest/src/js/main.js */\"./src/js/main.js\");\nmodule.exports = __webpack_require__(/*! /home/fred/labo/divers/webpacktest/src/scss/main.scss */\"./src/scss/main.scss\");\n\n\n//# sourceURL=webpack:///multi_./src/js/main.js_./src/scss/main.scss?");
 
 /***/ })
 

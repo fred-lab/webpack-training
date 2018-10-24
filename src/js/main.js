@@ -1,4 +1,5 @@
 import add from './partials/math';
+// import '../scss/main.scss';
 
 // eslint-disable-next-line no-console
 const display = msg => console.log(msg);

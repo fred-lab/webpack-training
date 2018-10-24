@@ -1,0 +1,12 @@
+
+//Test comment
+$beige : beige;
+
+body{
+  background-color: $beige;
+
+  & h1{
+    color: coral;
+    transform: translateX(20px);
+  }
+}
